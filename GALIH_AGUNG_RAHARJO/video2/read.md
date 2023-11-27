@@ -1,0 +1,1 @@
+penjelasan component dan contoh simpel component di react js
