@@ -1,0 +1,1 @@
+Video 6 memberikan tutorial tentang props dan memberikan example berupa homepage youtube
