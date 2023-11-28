@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Tutorial 2</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const Card = (props) => {
+        return (
+          <div class="card">
+            <p class="title">{props.name}</p>
+            <p>{props.job}</p>
+          </div>
+        );
+      };
+
+      const App = () => {
+        return (
+          <div>
+            <Card name="Bagus" job="Design" />
+            <Card name="Daffa" job="Frontend Dev" />
+            <Card name="Firmansyah" job="Backend Dev" />
+          </div>
+        );
+      };
+      const container = document.getElementById('root');
+      const root = ReactDOM.createRoot(container);
+      root.render(<App />);
+    </script>
+  </body>
+</html>
