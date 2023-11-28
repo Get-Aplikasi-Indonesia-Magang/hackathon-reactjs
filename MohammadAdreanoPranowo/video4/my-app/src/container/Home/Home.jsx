@@ -4,6 +4,17 @@ import Product from "../Product/Product";
 import LifeCycleComp from "../LifeCycleComp/LifeCycleComp";
 
 class Home extends Component{
+    
+    state = {
+        showComponent: true
+    }
+
+    componentDidMount(){
+        // this.setState({
+        //     showComponent: false
+        // })
+    }
+
     render(){
         return(
             <div>
@@ -31,7 +42,11 @@ class Home extends Component{
                 <Product /> */}
                 <p>LifeCycle Component</p>
                 <hr />
-                <LifeCycleComp />
+                {
+                    this.state.showComponent ?
+                    <LifeCycleComp /> : null
+
+                }
             </div>
         )
     }

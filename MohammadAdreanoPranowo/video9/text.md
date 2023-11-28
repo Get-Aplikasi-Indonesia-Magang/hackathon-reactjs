@@ -1,0 +1,1 @@
+file perubahan code masih di folder 4, untuk materi kali ini masih melanjutkan tentang lifecycle component. belajar mengenai mengupdate suatu komponen atau menyembunyikan suatu component
