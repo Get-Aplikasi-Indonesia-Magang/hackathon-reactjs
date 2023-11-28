@@ -1,0 +1,1 @@
+Mempelajari stateless component (tanpa class) dan statefull component (dengan class). Selain itu juga mempelajari cara membedakan stateless dan statefull component ke dua folder berbeda dan dua file jsx berbeda serta cara memanggilnya. Ditambahkan dengan cara import css di jsx
