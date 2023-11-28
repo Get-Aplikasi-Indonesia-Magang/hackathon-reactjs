@@ -5,9 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import HaloooComponent from './component/HaloooComponent';
 import StateFullComponentl from './container/StateFullComponent';
+import YuTubComp from './component/YuTubComp/YuTubComp';
+import YuTubHome from './container/YuTubHome/YuTubHome';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<HaloooComponent/>
+root.render(<YuTubHome/>
 );
 
 // If you want to start measuring performance in your app, pass a function
