@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import HelloComponent from './component/HelloComponent';
+import StateFullComponent from './container/StateFullComponent';
+import YouTubeComp from './component/YouTubeComp/YouTubeComp';
+import Home from './container/Home';
 
 const HelloWorld = () => {
   return <p>HelloWorld</p>
@@ -11,8 +15,7 @@ const HelloWorld = () => {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <p>Hello World From React DOM</p>
-    
+    <Home/>
   </React.StrictMode>
 );
 
