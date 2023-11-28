@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import YoutubeComp from "../../component/YoutubeComp/YoutubeComp";
 import Product from "../Product/Product";
+import LifeCycleComp from "../LifeCycleComp/LifeCycleComp";
 
 class Home extends Component{
     render(){
@@ -25,9 +26,12 @@ class Home extends Component{
                 title="solo vs squad"
                 desc="2jtX ditonton, 2 hari yang lalu"/>
                 <YoutubeComp /> */}
-                <p>Counter</p>
+                {/* <p>Counter</p>
                 <hr/>
-                <Product />
+                <Product /> */}
+                <p>LifeCycle Component</p>
+                <hr />
+                <LifeCycleComp />
             </div>
         )
     }
