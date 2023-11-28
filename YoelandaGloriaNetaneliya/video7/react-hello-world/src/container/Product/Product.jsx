@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from "react";
 import './Product.css';
 import CardProduct from "../CardProduct/CardProduct";
+import logo from '../../images/etane.jpg';
+
 
 class Product extends Component {
     state = {
@@ -17,8 +19,8 @@ class Product extends Component {
         return (
             <Fragment>
                 <div className="header">
-                    <div className="logo">
-                        <img src="images/etane.jpg" alt="" />
+                    <div >
+                        <img className="logo" src={logo} alt="" />
                     </div>
                     <div className="troley">
                         <img src="https://icon-library.com/images/white-shopping-cart-icon-png/white-shopping-cart-icon-png-19.jpg" alt="" />

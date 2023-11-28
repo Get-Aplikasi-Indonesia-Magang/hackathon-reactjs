@@ -8,6 +8,10 @@
   margin-bottom: 40px;
 }
 
+.logo{
+  width: 40%;
+}
+
 .troley {
   position: relative;
 }
