@@ -1,0 +1,1 @@
+untuk file koding masih di folder video4, dalam video 7 ini belajar update parent child component secara dimanis dengan statefull 
