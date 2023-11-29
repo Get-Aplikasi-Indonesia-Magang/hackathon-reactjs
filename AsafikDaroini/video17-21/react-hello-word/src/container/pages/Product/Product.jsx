@@ -6,7 +6,7 @@ import CardProduct from "./CardProduct/CardProduct";
 class Product extends Component {
   state = {
     order: 3,
-    name: "Nugroho",
+    name: "roni",
   };
 
   handleCounterChange = (newValue) => {
@@ -26,7 +26,7 @@ class Product extends Component {
           </div>
           <div className="troley">
             <img
-              src="https://cdn.icon-icons.com/icons2/1391/PNG/512/troley_96344.png"
+              src="assets/images.png"
               alt=""
             />
             <div className="count">{this.state.order}</div>
