@@ -1,0 +1,57 @@
+.myBG {
+  height: 100vh;
+  background: url("../assets/bg/main.jpg");
+  background-size: cover;
+}
+.brand {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  text-shadow: 2px 2px rgb(82, 82, 82);
+  padding: 1rem;
+}
+.title {
+  height: 350px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.intro {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  text-shadow: 2px 2px rgb(82, 82, 82);
+  padding: 1rem;
+}
+
+.trending {
+  height: auto;
+  background: url("../assets/bg/bg-2.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  min-width: 18rem;
+}
+
+.trending-title {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  padding: 1rem;
+}
+
+.superhero {
+  height: auto;
+  background: url("../assets/bg/bg-3.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
