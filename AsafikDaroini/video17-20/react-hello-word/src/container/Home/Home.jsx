@@ -38,11 +38,8 @@ class Home extends Component {
               <Link to='/product'>Product</Link>
               <Link to='/lifecycle'>Lifecycle</Link>
               <Link to='/youtube'>Youtube</Link>
-        </div>
+            </div>
         <Routes>
-          
-       
-        
             <Route path="/" Component={BlogPost}/>
             <Route path="/product" Component={Product}/>
             <Route path="/lifecycle" Component={LifeCycleComp}/>
