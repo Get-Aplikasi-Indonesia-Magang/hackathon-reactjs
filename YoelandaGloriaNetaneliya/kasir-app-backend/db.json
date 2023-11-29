@@ -20,7 +20,7 @@
       "nama": "Boruto: Two Blue Vortex",
       "harga": 16000,
       "is_ready": true,
-      "gambar": "sate-ayam.jpg",
+      "gambar": "boruto.jpg",
       "category": {
         "id": 1,
         "nama": "Manga Anime"
@@ -32,7 +32,7 @@
       "nama": "One Piece",
       "harga": 14000,
       "is_ready": true,
-      "gambar": "nasi-goreng-telor.jpg",
+      "gambar": "luffy.jpg",
       "category": {
         "id": 1,
         "nama": "Manga Anime"
@@ -44,7 +44,7 @@
       "nama": "Chainsaw Man",
       "harga": 12000,
       "is_ready": true,
-      "gambar": "nasi-rames.jpg",
+      "gambar": "denji.jpg",
       "category": {
         "id": 1,
         "nama": "Manga Anime"
@@ -56,7 +56,7 @@
       "nama": "Dragon Ball Super",
       "harga": 18000,
       "is_ready": true,
-      "gambar": "lontong-opor-ayam.jpg",
+      "gambar": "dragonBall.jpg",
       "category": {
         "id": 1,
         "nama": "Manga Anime"
@@ -68,7 +68,7 @@
       "nama": "Dr. STONE",
       "harga": 13000,
       "is_ready": true,
-      "gambar": "mie-goreng.jpg",
+      "gambar": "dr.Stone.jpg",
       "category": {
         "id": 1,
         "nama": "Manga Anime"
@@ -80,7 +80,7 @@
       "nama": "My Hero Academia",
       "harga": 10000,
       "is_ready": true,
-      "gambar": "bakso.jpg",
+      "gambar": "midoriya.jpg",
       "category": {
         "id": 1,
         "nama": "Manga Anime"
@@ -92,7 +92,7 @@
       "nama": "Dandadan",
       "harga": 14000,
       "is_ready": true,
-      "gambar": "mie-ayam-bakso.jpg",
+      "gambar": "dandadan.jpg",
       "category": {
         "id": 1,
         "nama": "Manga Anime"
@@ -104,7 +104,7 @@
       "nama": "SPY x FAMILY",
       "harga": 5000,
       "is_ready": true,
-      "gambar": "pangsit.jpg",
+      "gambar": "anya.jpg",
       "category": {
         "id": 3,
         "nama": "Keychain Anime"
@@ -116,7 +116,7 @@
       "nama": "Oshi no Ko",
       "harga": 5000,
       "is_ready": true,
-      "gambar": "kentang-goreng.jpg",
+      "gambar": "ruby.jpg",
       "category": {
         "id": 3,
         "nama": "Keychain Anime"
@@ -128,7 +128,7 @@
       "nama": "Blue Lock",
       "harga": 15000,
       "is_ready": true,
-      "gambar": "cheese-burger.jpg",
+      "gambar": "bluelock.jpg",
       "category": {
         "id": 3,
         "nama": "Keychain Anime"
@@ -140,7 +140,7 @@
       "nama": "Demon Slayer Kimetsu No Yaiba",
       "harga": 25000,
       "is_ready": true,
-      "gambar": "coffe-late.jpg",
+      "gambar": "kny.jpg",
       "category": {
         "id": 2,
         "nama": "Figure Anime"
@@ -152,7 +152,7 @@
       "nama": "Naruto Shippuden ",
       "harga": 20000,
       "is_ready": true,
-      "gambar": "es-jeruk.jpg",
+      "gambar": "naruto.jpg",
       "category": {
         "id": 2,
         "nama": "Figure Anime"
@@ -164,7 +164,7 @@
       "nama": "Shingeki no Kyojin",
       "harga": 25000,
       "is_ready": true,
-      "gambar": "es-teh.jpg",
+      "gambar": "leviKecap.jpg",
       "category": {
         "id": 2,
         "nama": "Figure Anime"
@@ -176,7 +176,7 @@
       "nama": "Jujutsu Kaisen",
       "harga": 30000,
       "is_ready": true,
-      "gambar": "teh-hangat.jpg",
+      "gambar": "jjk.jpg",
       "category": {
         "id": 2,
         "nama": "Figure Anime"
@@ -193,7 +193,7 @@
         "nama": "My Hero Academia",
         "harga": 10000,
         "is_ready": true,
-        "gambar": "bakso.jpg",
+        "gambar": "midoriya.jpg",
         "category": {
           "id": 1,
           "nama": "Manga Anime"
@@ -211,7 +211,7 @@
         "nama": "Dr. STONE",
         "harga": 13000,
         "is_ready": true,
-        "gambar": "mie-goreng.jpg",
+        "gambar": "dr.Stone.jpg",
         "category": {
           "id": 1,
           "nama": "Manga Anime"
@@ -233,7 +233,7 @@
             "nama": "Boruto: Two Blue Vortex",
             "harga": 16000,
             "is_ready": true,
-            "gambar": "sate-ayam.jpg",
+            "gambar": "boruto.jpg",
             "category": {
               "id": 1,
               "nama": "Manga Anime"
@@ -251,7 +251,7 @@
             "nama": "One Piece",
             "harga": 14000,
             "is_ready": true,
-            "gambar": "nasi-goreng-telor.jpg",
+            "gambar": "luffy.jpg",
             "category": {
               "id": 1,
               "nama": "Manga Anime"
