@@ -8,8 +8,11 @@ const Post = (props) => {
         <img src="https://placehold.co/600x400" alt="Dummy" />
       </div>
       <div className="content">
-        <p className="title">{props.title}</p>
-        <p className="desc">{props.desc}</p>
+        <p className="title">{props.data.title}</p>
+        <p className="desc">{props.data.body}</p>
+        <button className="delete" onClick={() => props.onClick(props.data.id)}>
+          Delete
+        </button>
       </div>
     </div>
   );
