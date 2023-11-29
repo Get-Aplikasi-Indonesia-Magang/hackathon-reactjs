@@ -52,7 +52,7 @@ class Home extends Component {
                 } */}
                 <p>Blog Post</p>
                 <hr/>
-                <BlogPost/>   
+                <BlogPost />   
             </div>
             
         )
