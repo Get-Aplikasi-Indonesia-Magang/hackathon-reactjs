@@ -1,0 +1,23 @@
+.navigate {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #3498db;
+    padding: 10px;
+  }
+  
+  .navigate a {
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+    margin-right: 100px; 
+    background: #e74c3c;
+    border-radius: 5px ;
+  }
+  
+  .navigate a:hover {
+    color: #180606;
+  }
+  
