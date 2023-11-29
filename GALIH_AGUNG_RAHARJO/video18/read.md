@@ -1,0 +1,1 @@
+belajar tentang dynamic component di react js menggunkan props
