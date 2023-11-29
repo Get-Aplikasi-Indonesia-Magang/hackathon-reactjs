@@ -1,9 +1,10 @@
 import React, {Component} from "react";
-import Product from "../Product/Product";
-import LifeCycleComp from "../LifeCycleComp/LifeCycleComp";
-import BlogPost from "../BlogPost/BlogPost";
+import Product from "../Pages/Product/Product";
+import LifeCycleComp from "../Pages/LifeCycleComp/LifeCycleComp";
+import BlogPost from "../Pages/BlogPost/BlogPost";
 import { BrowserRouter as Router, Routes, Route, BrowserRouter, Link} from 'react-router-dom';
 import './Home.css';
+import YoutubeCompPage from "../Pages/YoutubeCompPage/YoutubeCompPage";
 
 class Home extends Component{
     
@@ -19,11 +20,13 @@ class Home extends Component{
                         <Link to="/" >Blog Post</Link>
                         <Link to="/product" >Product</Link>
                         <Link to="/lifecycle" >LifeCycle</Link>
+                        <Link to="/youtube" >Youtube</Link>
                     </div>
                     <Routes>
                         <Route path="/" element={<BlogPost />} />
                         <Route path="/lifecycle" element={<LifeCycleComp />} />
                         <Route path="/product" element={<Product />} />
+                        <Route path="/youtube" element={<YoutubeCompPage />} />
                     </Routes>
                 </div>
         </BrowserRouter>
