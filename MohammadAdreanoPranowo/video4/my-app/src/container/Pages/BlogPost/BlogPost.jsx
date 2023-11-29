@@ -3,6 +3,7 @@ import './BlogPost.css';
 import Post from "../../../component/Post/Post";
 import axios from 'axios';
 
+
 class BlogPost extends Component {
     state = {
         post:[],
@@ -90,6 +91,10 @@ class BlogPost extends Component {
             this.postDataToAPI()
         }
     }
+
+    handleDetail = (Id) => {
+       this.props.history.push(`/detail-post/${Id}`); 
+    }
     componentDidMount(){
         this.getPostAPI()
     }
@@ -109,7 +114,7 @@ class BlogPost extends Component {
                 </div>
                 {
                     this.state.post.map(post => {
-                        return  <Post key={post.id} data={post} remove={this.handleRemove} update={this.handleUpdate} />
+                        return  <Post key={post.id} data={post} remove={this.handleRemove} update={this.handleUpdate} goDetail={this.handleDetail} />
                     })
                 }
             </Fragment>

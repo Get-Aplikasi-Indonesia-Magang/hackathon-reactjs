@@ -1,0 +1,1 @@
+untuk perubahan kode pada video4, pada pelajaran kali ini belajar mengirim spesifik id/params ke halaman detail atau halaman tertentu

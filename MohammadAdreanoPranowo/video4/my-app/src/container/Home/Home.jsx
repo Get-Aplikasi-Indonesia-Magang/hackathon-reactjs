@@ -5,6 +5,7 @@ import BlogPost from "../Pages/BlogPost/BlogPost";
 import { BrowserRouter as Router, Routes, Route, BrowserRouter, Link} from 'react-router-dom';
 import './Home.css';
 import YoutubeCompPage from "../Pages/YoutubeCompPage/YoutubeCompPage";
+import DetailPost from "../Pages/BlogPost/DetailPost/DetailPost";
 
 class Home extends Component{
     
@@ -24,6 +25,7 @@ class Home extends Component{
                     </div>
                     <Routes>
                         <Route path="/" element={<BlogPost />} />
+                        <Route path="/detail-post/:postId" element={<DetailPost />}/>
                         <Route path="/lifecycle" element={<LifeCycleComp />} />
                         <Route path="/product" element={<Product />} />
                         <Route path="/youtube" element={<YoutubeCompPage />} />
