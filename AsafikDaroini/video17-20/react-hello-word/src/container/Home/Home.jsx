@@ -1,21 +1,11 @@
-//Libaris
-import React, { Component } from "react";
-import {
-  BrowserRouter as Router, Routes,Route, Link
-} from "react-router-dom";
-
-//pages
-import Product from "../Page/Product/Product";
-import LifeCycleComp from "../Page/LifeCycleComp/LifeCycleComp";
-import BlogPost from '../Page/BlogPost/BlogPost'
-import Youtube from "../Page/YouTubeComp/Youtube";
-import DetailPost from '../Page/BlogPost/DetailPost/DetailPost'
-
-//css
-import './Navigations.css'
-
-
-
+import React, { Component, Fragment } from "react";
+import Product from "../pages/Product/Product";
+import LifeCycleComp from "../pages/LifeCycleComp/LifeCycleComp";
+import BlogPost from "../pages/BlogPost/BlogPost";
+import { Route, Link, Switch } from "react-router-dom";
+import "./Home.css";
+import YoutubeCompPage from "../pages/YoutubeCompPage/YoutubeCompPage";
+import DetailPost from "../pages/BlogPost/DetailPost/DetailPost";
 
 class Home extends Component {
   state = {
@@ -32,22 +22,21 @@ class Home extends Component {
 
   render() {
     return (
-      <Router>
-            <div className='navigations'>
-              <Link to='/'>Blog Spot</Link>
-              <Link to='/product'>Product</Link>
-              <Link to='/lifecycle'>Lifecycle</Link>
-              <Link to='/youtube'>Youtube</Link>
+        <Switch>
+          <Fragment>
+            <div className="navigate">
+              <Link to="/">Blog Post</Link>
+              <Link to="/product">Product</Link>
+              <Link to="/lifecycle">LifeCycle</Link>
+              <Link to="/youtube-comp">YoutubeComp</Link>
             </div>
-        <Routes>
-            <Route path="/" Component={BlogPost}/>
-            <Route path="/product" Component={Product}/>
-            <Route path="/lifecycle" Component={LifeCycleComp}/>
-            <Route path="/youtube" Component={Youtube}/>
-            <Route path="/detail-post/:id" Component={DetailPost} />
-        </Routes>
-      </Router>
-      
+            <Route path="/" exact component={BlogPost} />
+            <Route path="/detail-post/:id" component={DetailPost} />
+            <Route path="/product" component={Product} />
+            <Route path="/lifecycle" component={LifeCycleComp} />
+            <Route path="/youtube-comp" component={YoutubeCompPage} />
+          </Fragment>
+        </Switch>
     );
   }
 }

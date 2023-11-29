@@ -3,8 +3,6 @@ import "./BlogPost.css";
 import Post from "../../../component/Post/Post";
 import axios from "axios";
 
-import {Navigate} from 'react-router-dom'
-
 class BlogPost extends Component {
   state = {
     post: [],
@@ -15,8 +13,6 @@ class BlogPost extends Component {
       userId: 1,
     },
     isUpdate: false,
-    isDetail: null,
-    
   };
 
   getPostAPI = () => {
@@ -69,7 +65,7 @@ class BlogPost extends Component {
   };
 
   handleRemove = (data) => {
-    axios.delete(`http://localhost:3004/posts/${data}`).then((result) => {
+    axios.delete(`http://localhost:3001/posts/${data}`).then((result) => {
       this.getPostAPI();
     });
   };
@@ -94,14 +90,6 @@ class BlogPost extends Component {
     }
   };
 
-
-
- 
-
-  handleDetail = (data) => {
-    this.setState({isDetail: data})
-  }
-
   handleUpdate = (data) => {
     this.setState({
       formBlogPost: data,
@@ -109,19 +97,17 @@ class BlogPost extends Component {
     });
   };
 
+  handleDetail = (id) => {
+    this.props.history.push(`/detail-post/${id}`);
+  }
+
   componentDidMount() {
     this.getPostAPI();
   }
-  render() { 
-    let {isDetail} = this.state;
+  render() {
     return (
       <Fragment>
-
-        {
-          isDetail && <Navigate to={`/detail-post/${isDetail}`}/>
-        }
-
-        <p>Halaman Blog Spot</p>
+        <h1>Blog Post Page</h1>
         <hr />
         <p className="section-title">Blog Post</p>
         <div className="form-add-post">
@@ -149,8 +135,12 @@ class BlogPost extends Component {
         </div>
         {this.state.post.map((post) => {
           return (
-            <Post key={post.id} data={post} onRemove={this.handleRemove}
-              onUpdate={this.handleUpdate} goDetail={this.handleDetail}
+            <Post
+              key={post.id}
+              data={post}
+              onRemove={this.handleRemove}
+              onUpdate={this.handleUpdate}
+              onDetail={this.handleDetail}
             />
           );
         })}
@@ -159,4 +149,4 @@ class BlogPost extends Component {
   }
 }
 
-export default  BlogPost;
+export default BlogPost;

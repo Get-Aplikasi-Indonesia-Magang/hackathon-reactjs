@@ -1,12 +1,12 @@
 import React from "react";
 import { Fragment, Component } from "react";
 import "./Product.css";
-import CardProduct from './CardProduct/CardProduct'
+import CardProduct from "./CardProduct/CardProduct";
 
 class Product extends Component {
   state = {
     order: 3,
-    name: "roni",
+    name: "Nugroho",
   };
 
   handleCounterChange = (newValue) => {
@@ -18,7 +18,7 @@ class Product extends Component {
   render() {
     return (
       <Fragment>
-        <p>Halaman Product</p>
+        <h1>Product Page</h1>
         <hr />
         <div className="header">
           <div className="logo">

@@ -4,10 +4,10 @@ const Post = (props) => {
   return (
     <div className="post">
       <div className="img-thumb">
-      <img src="https://picsum.photos/200/300?random=1" width={200} height={150} alt="dummy" />
+        <img src="https://source.unsplash.com/200x150?" alt="dummy" />
       </div>
       <div className="content">
-        <p className="title" onClick={() => props.goDetail(props.data.id)}>{props.data.title}</p>
+        <p className="title" onClick={() => props.onDetail(props.data.id)}>{props.data.title}</p>
         <p className="desc">{props.data.body}</p>
         <button
           className="update"
