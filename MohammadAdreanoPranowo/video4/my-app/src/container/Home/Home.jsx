@@ -1,8 +1,9 @@
 import React, {Component} from "react";
-// import YoutubeComp from "../../component/YoutubeComp/YoutubeComp";
-// import Product from "../Product/Product";
-// import LifeCycleComp from "../LifeCycleComp/LifeCycleComp";
+import Product from "../Product/Product";
+import LifeCycleComp from "../LifeCycleComp/LifeCycleComp";
 import BlogPost from "../BlogPost/BlogPost";
+import { BrowserRouter as Router, Routes, Route, BrowserRouter, Link} from 'react-router-dom';
+import './Home.css';
 
 class Home extends Component{
     
@@ -10,47 +11,22 @@ class Home extends Component{
         showComponent: true
     }
 
-    componentDidMount(){
-        // this.setState({
-        //     showComponent: false
-        // })
-    }
-
     render(){
         return(
-            <div>
-                {/* <p>Youtube Component</p>
-                <hr/>
-                <YoutubeComp 
-                time="8.30" 
-                title="pubg new"
-                desc="1jtX ditonton, 2 hari yang lalu"/>
-                <YoutubeComp 
-                time="9.20" 
-                title="event pubg"
-                desc="2jtX ditonton, 3 hari yang lalu"/>
-                <YoutubeComp 
-                time="6.10" 
-                title="update new"
-                desc="1jtX ditonton, 4 hari yang lalu"/>
-                <YoutubeComp 
-                time="5.40" 
-                title="solo vs squad"
-                desc="2jtX ditonton, 2 hari yang lalu"/>
-                <YoutubeComp /> */}
-                {/* <p>Counter</p>
-                <hr/>
-                <Product /> */}
-                {/* <p>LifeCycle Component</p>
-                <hr />
-                {
-                    this.state.showComponent ?
-                    <LifeCycleComp /> : null
-                } */}
-                <p>Blog Post</p>
-                <hr />
-                <BlogPost />
-            </div>
+        <BrowserRouter>
+                <div className="CardComp">
+                    <div className="navigation">
+                        <Link to="/" >Blog Post</Link>
+                        <Link to="/product" >Product</Link>
+                        <Link to="/lifecycle" >LifeCycle</Link>
+                    </div>
+                    <Routes>
+                        <Route path="/" element={<BlogPost />} />
+                        <Route path="/lifecycle" element={<LifeCycleComp />} />
+                        <Route path="/product" element={<Product />} />
+                    </Routes>
+                </div>
+        </BrowserRouter>
         )
     }
 }
