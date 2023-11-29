@@ -9,3 +9,4 @@
 - Buat folder dengan nama lengkap kalian, contoh 'DitoCahyaPratama' pada repository hackaton-reactjs
 - Jika ingin melakukan push harap di push pada folder teman-teman sendiri
 - Setelah di push, lakukan pull request. Nanti admin akan melakukan accept request nya
+ 

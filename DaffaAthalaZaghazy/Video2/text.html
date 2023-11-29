@@ -1,0 +1,32 @@
+<div id="root"></div>
+
+
+
+
+
+
+
+const Card = (props) => {
+    return(
+        <div class ="card">
+            <p class ="title">{props.name}</p>
+            <p class>{props.job}</p>
+        </div>
+            
+        
+    )
+}
+
+
+cons App = () => {
+    return(
+        <div>
+            <Card name=""Prawito Hudoro" job="FrontEnd Dev"/>
+            <Card name=""Daffa Ath Z" job="BackEnd Dev"/>
+            <Card name=""Ryo Indisa" job="FrontEnd Dev"/>
+        </div>
+    )
+}
+
+ReactDOM.render(<App />,
+document.querySelector(#root))  

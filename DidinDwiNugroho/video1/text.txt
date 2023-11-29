@@ -1,0 +1,10 @@
+Pengenalan Reactjs
+reactjs bekerja berdasarkan dengan component/base component
+1. Header component
+2. Banner component
+3. Reuse Component
+    -Article Component
+    -Img Component
+4. Footer Component     
+
+lebih lengkapnya https://react.dev/

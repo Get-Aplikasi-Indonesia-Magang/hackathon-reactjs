@@ -1,0 +1,1 @@
+file code masih di folder video 4, untuk update kali ini belajar mengenai lifeCycle component tentang mounting dan juga updating
