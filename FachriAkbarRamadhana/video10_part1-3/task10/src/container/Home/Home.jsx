@@ -1,13 +1,12 @@
 //library
-import React, {Component, Fragment } from 'react';
-import {Switch, Link, Route} from 'react-router-dom';
+import React, {Component } from 'react';
+import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 
 //pages
 import Product from '../pages/Product/Product';
 import LifeCycleComp from '../pages/LifeCycleComp/LifeCycleComp';
 import BlogPost from '../pages/BlogPost/BlogPost';
 import YoutubeCompPage from '../pages/YoutubeCompPage/YoutubeCompPage';
-import DetailPost from '../pages/BlogPost/DetailPost/DetailPost';
 
 //style
 import './Home.css';
@@ -29,21 +28,20 @@ class Home extends Component {
 
     render(){
         return (
-            <Switch>
-                <Fragment>
+            <BrowserRouter>
                     <div className='navigation'>
                         <Link to='/'>Blog Post</Link>
                         <Link to='/product'>Product</Link>
                         <Link to='/lifecycle'>Lifecycle</Link>
                         <Link to='/youtube-component'>Youtube</Link>
                     </div>
-                    <Route path="/" exact component={BlogPost} />
-                    <Route path="/detail-post/:id" component={DetailPost}  />
-                    <Route path="/lifecycle" component={LifeCycleComp} />
-                    <Route path="/product" component={Product} />
-                    <Route path="/youtube-component" component={YoutubeCompPage} />
-                </Fragment>
-            </Switch>  
+                <Routes>
+                    <Route path="/" element={<BlogPost />} />
+                    <Route path="/lifecycle" element={<LifeCycleComp />} />
+                    <Route path="/product" element={<Product />} />
+                    <Route path="/youtube-component" element={<YoutubeCompPage />} />
+                </Routes>
+            </BrowserRouter>  
         )
     }
 }
