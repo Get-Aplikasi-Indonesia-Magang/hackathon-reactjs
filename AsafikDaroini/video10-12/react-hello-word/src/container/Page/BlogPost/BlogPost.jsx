@@ -3,7 +3,7 @@ import "./BlogPost.css";
 import Post from "../../../component/Post/Post";
 import axios from "axios";
 
-
+import {Navigate} from 'react-router-dom'
 
 class BlogPost extends Component {
   state = {
@@ -15,6 +15,8 @@ class BlogPost extends Component {
       userId: 1,
     },
     isUpdate: false,
+    isDetail: null,
+    
   };
 
   getPostAPI = () => {
@@ -96,8 +98,8 @@ class BlogPost extends Component {
 
  
 
-  handleDetail = (id) => {
-    this.props.history.push(`/detail-post/${id}`)
+  handleDetail = (data) => {
+    this.setState({isDetail: data})
   }
 
   handleUpdate = (data) => {
@@ -110,9 +112,15 @@ class BlogPost extends Component {
   componentDidMount() {
     this.getPostAPI();
   }
-  render() {
+  render() { 
+    let {isDetail} = this.state;
     return (
       <Fragment>
+
+        {
+          isDetail && <Navigate to={`/detail-post/${isDetail}`}/>
+        }
+
         <p>Halaman Blog Spot</p>
         <hr />
         <p className="section-title">Blog Post</p>
