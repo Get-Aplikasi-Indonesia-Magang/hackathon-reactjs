@@ -593,6 +593,12 @@
       "title": "Tutorial ReactJS Untuk Pemula 1",
       "body": "Update data ke API dengan Method PUT 1",
       "userId": 1
+    },
+    {
+      "id": 1701237870275,
+      "title": "Tutorial ReactJS Untuk Pemula 2",
+      "body": "Update Data Ke API Dengan Method PUT 2",
+      "userId": 1
     }
   ],
   "comments": [],
