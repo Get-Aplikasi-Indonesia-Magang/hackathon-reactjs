@@ -1,0 +1,13 @@
+.navigation {
+    background: #202020;
+    padding: 30px;
+}
+
+.navigation a{
+    padding: 10px 40px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background: #3a3732;
+    border-radius: 4px;
+}
