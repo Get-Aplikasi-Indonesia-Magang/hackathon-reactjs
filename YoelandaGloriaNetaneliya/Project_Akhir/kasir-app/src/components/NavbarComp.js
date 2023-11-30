@@ -8,7 +8,7 @@ const NavbarComponent = () => {
                 <Navbar.Brand href="#home"><strong>Kasir</strong> App</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    {/* <Nav className="me-auto">
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#link">Link</Nav.Link>
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
@@ -22,7 +22,7 @@ const NavbarComponent = () => {
                                 Separated link
                             </NavDropdown.Item>
                         </NavDropdown>
-                    </Nav>
+                    </Nav> */}
                 </Navbar.Collapse>
             </Container>
         </Navbar>

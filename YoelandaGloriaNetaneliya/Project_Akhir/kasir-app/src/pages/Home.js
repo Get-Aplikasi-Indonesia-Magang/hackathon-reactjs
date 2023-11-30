@@ -19,7 +19,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     axios.get(API_URL + "products?category.nama=" + this.state.categoriYangDipilih)
-      .then(res => {
+      .then((res) => {
         const menus = res.data;
         this.setState({ menus });
       })
@@ -28,7 +28,7 @@ export default class Home extends Component {
       });
 
     axios.get(API_URL + "keranjangs")
-      .then(res => {
+      .then((res) => {
         const keranjangs = res.data;
         this.setState({ keranjangs });
       })
@@ -40,7 +40,7 @@ export default class Home extends Component {
   componentDidUpdate(prevState) {
     if (this.state.keranjangs !== prevState.keranjangs) {
       axios.get(API_URL + "keranjangs")
-      .then(res => {
+      .then((res) => {
         const keranjangs = res.data;
         this.setState({ keranjangs });
       })
@@ -56,7 +56,7 @@ export default class Home extends Component {
       menus: []
     })
     axios.get(API_URL + "products?category.nama=" + value)
-      .then(res => {
+      .then((res) => {
         const menus = res.data;
         this.setState({ menus });
       })
@@ -68,7 +68,7 @@ export default class Home extends Component {
   masukKeranjang = (value) => {
 
     axios.get(API_URL + "keranjangs?product.id=" + value.id)
-      .then(res => {
+      .then((res) => {
         if (res.data.length === 0) {
           const keranjang = {
             jumlah: 1,
@@ -76,7 +76,7 @@ export default class Home extends Component {
             product: value
           }
           axios.post(API_URL + "keranjangs", keranjang)
-            .then(res => {
+            .then((res) => {
               swal({
                 title: "Sukses Masuk Keranjang",
                 text: "Sukses Masuk Keranjang " + keranjang.product.nama,
@@ -96,7 +96,7 @@ export default class Home extends Component {
           };
 
           axios.put(API_URL + "keranjangs/" + res.data[0].id, keranjang)
-            .then(res => {
+            .then((res) => {
               swal({
                 title: "Sukses Masuk Keranjang",
                 text: "Sukses Masuk Keranjang " + keranjang.product.nama,
@@ -126,10 +126,10 @@ export default class Home extends Component {
               <ListCategories
                 changeCategory={this.changeCategory}
                 categoriYangDipilih={categoriYangDipilih} />
-              <Col>
+              <Col className='mt-3'>
                 <h4><strong>Daftar Produk</strong></h4>
                 <hr />
-                <Row>
+                <Row className='overflow-auto menu'>
                   {menus && menus.map((menu) => (
                     <Menus
                       key={menu.id}

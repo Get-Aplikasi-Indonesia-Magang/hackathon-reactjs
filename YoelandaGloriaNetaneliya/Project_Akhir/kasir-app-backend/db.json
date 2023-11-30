@@ -184,46 +184,5 @@
     }
   ],
   "keranjangs": [],
-  "pesanans": [
-    {
-      "total_bayar": 30000,
-      "menus": [
-        {
-          "jumlah": 1,
-          "total_harga": 14000,
-          "product": {
-            "id": 2,
-            "kode": "K-02",
-            "nama": "One Piece",
-            "harga": 14000,
-            "is_ready": true,
-            "gambar": "luffy.jpg",
-            "category": {
-              "id": 1,
-              "nama": "Manga Anime"
-            }
-          },
-          "id": 1
-        },
-        {
-          "jumlah": 1,
-          "total_harga": 16000,
-          "product": {
-            "id": 1,
-            "kode": "K-01",
-            "nama": "Boruto: Two Blue Vortex",
-            "harga": 16000,
-            "is_ready": true,
-            "gambar": "boruto.jpg",
-            "category": {
-              "id": 1,
-              "nama": "Manga Anime"
-            }
-          },
-          "id": 2
-        }
-      ],
-      "id": 1
-    }
-  ]
+  "pesanans": []
 }
