@@ -1,0 +1,1 @@
+react js adalah Pustaka JavaScript untuk membangun antarmuka pengguna. react bekerja berdasarkan komponen. kita bisa menggunakan react dimana saja 

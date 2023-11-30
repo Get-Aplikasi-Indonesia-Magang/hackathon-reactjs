@@ -1,0 +1,1 @@
+update parent oleh child component
