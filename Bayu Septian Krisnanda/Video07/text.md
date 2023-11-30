@@ -1,3 +1,2 @@
-Pengaplikasian StateFull dan StateLess pada web percobaan
-Dan pemanggilan component dari folder lain 
-Dan juga menggunakan "props"
+UP Video 08, 09 LifeCycle Component
+UP Video 10, 11,  FAKE API
