@@ -1,0 +1,18 @@
+.container-all {
+  background-color: #414141;
+  height: auto;
+  background: url("../assets/bg/main.jpg");
+  background-size: cover;
+}
+.title {
+  font-size: 4rem;
+  color: white;
+  font-weight: 800;
+  text-shadow: 2px 2px rgb(100, 100, 100);
+}
+.wrapper-card {
+  height: auto;
+}
+.card {
+  min-width: 18rem;
+}
