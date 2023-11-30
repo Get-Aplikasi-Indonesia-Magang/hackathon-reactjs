@@ -1,0 +1,266 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "nama": "Manga Anime"
+    },
+    {
+      "id": 2,
+      "nama": "Figure Anime"
+    },
+    {
+      "id": 3,
+      "nama": "Keychain Anime"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "kode": "K-01",
+      "nama": "Boruto: Two Blue Vortex",
+      "harga": 16000,
+      "is_ready": true,
+      "gambar": "boruto.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Manga Anime"
+      }
+    },
+    {
+      "id": 2,
+      "kode": "K-02",
+      "nama": "One Piece",
+      "harga": 14000,
+      "is_ready": true,
+      "gambar": "luffy.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Manga Anime"
+      }
+    },
+    {
+      "id": 3,
+      "kode": "K-03",
+      "nama": "Chainsaw Man",
+      "harga": 12000,
+      "is_ready": true,
+      "gambar": "denji.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Manga Anime"
+      }
+    },
+    {
+      "id": 4,
+      "kode": "K-04",
+      "nama": "Dragon Ball Super",
+      "harga": 18000,
+      "is_ready": true,
+      "gambar": "dragonBall.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Manga Anime"
+      }
+    },
+    {
+      "id": 5,
+      "kode": "K-05",
+      "nama": "Dr. STONE",
+      "harga": 13000,
+      "is_ready": true,
+      "gambar": "dr.Stone.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Manga Anime"
+      }
+    },
+    {
+      "id": 6,
+      "kode": "K-06",
+      "nama": "My Hero Academia",
+      "harga": 10000,
+      "is_ready": true,
+      "gambar": "midoriya.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Manga Anime"
+      }
+    },
+    {
+      "id": 7,
+      "kode": "K-07",
+      "nama": "Dandadan",
+      "harga": 14000,
+      "is_ready": true,
+      "gambar": "dandadan.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Manga Anime"
+      }
+    },
+    {
+      "id": 8,
+      "kode": "K-08",
+      "nama": "SPY x FAMILY",
+      "harga": 5000,
+      "is_ready": true,
+      "gambar": "anya.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Keychain Anime"
+      }
+    },
+    {
+      "id": 9,
+      "kode": "K-09",
+      "nama": "Oshi no Ko",
+      "harga": 5000,
+      "is_ready": true,
+      "gambar": "ruby.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Keychain Anime"
+      }
+    },
+    {
+      "id": 10,
+      "kode": "K-010",
+      "nama": "Blue Lock",
+      "harga": 15000,
+      "is_ready": true,
+      "gambar": "bluelock.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Keychain Anime"
+      }
+    },
+    {
+      "id": 11,
+      "kode": "K-011",
+      "nama": "Demon Slayer Kimetsu No Yaiba",
+      "harga": 25000,
+      "is_ready": true,
+      "gambar": "kny.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Figure Anime"
+      }
+    },
+    {
+      "id": 12,
+      "kode": "K-012",
+      "nama": "Naruto Shippuden ",
+      "harga": 20000,
+      "is_ready": true,
+      "gambar": "naruto.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Figure Anime"
+      }
+    },
+    {
+      "id": 13,
+      "kode": "K-013",
+      "nama": "Shingeki no Kyojin",
+      "harga": 25000,
+      "is_ready": true,
+      "gambar": "leviKecap.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Figure Anime"
+      }
+    },
+    {
+      "id": 14,
+      "kode": "K-014",
+      "nama": "Jujutsu Kaisen",
+      "harga": 30000,
+      "is_ready": true,
+      "gambar": "jjk.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Figure Anime"
+      }
+    }
+  ],
+  "keranjangs": [
+    {
+      "jumlah": 1,
+      "total_harga": 10000,
+      "product": {
+        "id": 6,
+        "kode": "K-06",
+        "nama": "My Hero Academia",
+        "harga": 10000,
+        "is_ready": true,
+        "gambar": "midoriya.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Manga Anime"
+        }
+      },
+      "keterangan": "Bakso Kosongan",
+      "id": 1
+    },
+    {
+      "jumlah": 1,
+      "total_harga": 13000,
+      "product": {
+        "id": 5,
+        "kode": "K-05",
+        "nama": "Dr. STONE",
+        "harga": 13000,
+        "is_ready": true,
+        "gambar": "dr.Stone.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Manga Anime"
+        }
+      },
+      "id": 2
+    }
+  ],
+  "pesanans": [
+    {
+      "total_bayar": 60000,
+      "menus": [
+        {
+          "jumlah": 2,
+          "total_harga": 32000,
+          "product": {
+            "id": 1,
+            "kode": "K-01",
+            "nama": "Boruto: Two Blue Vortex",
+            "harga": 16000,
+            "is_ready": true,
+            "gambar": "boruto.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Manga Anime"
+            }
+          },
+          "keterangan": "Semuanya Pedas",
+          "id": 1
+        },
+        {
+          "jumlah": 2,
+          "total_harga": 28000,
+          "product": {
+            "id": 2,
+            "kode": "K-02",
+            "nama": "One Piece",
+            "harga": 14000,
+            "is_ready": true,
+            "gambar": "luffy.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Manga Anime"
+            }
+          },
+          "id": 3
+        }
+      ],
+      "id": 1
+    }
+  ]
+}
