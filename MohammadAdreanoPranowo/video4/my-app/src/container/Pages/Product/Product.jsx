@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import './Product.css';
-import CardProduct from "../CardProduct/CardProduct";
+import CardProduct from "../../CardProduct/CardProduct";
 
 class Product extends Component{
 
@@ -17,6 +17,8 @@ class Product extends Component{
     render(){
         return(
             <Fragment>
+                <p>Halaman Product</p>
+                <hr />
                 <div className="header">
                     <div className="logo">
                         <img src="https://etanee.id/static/media/xfood-logo-blue-login.6ec62d26.png" width="100px" height="100px" alt="logo" />
