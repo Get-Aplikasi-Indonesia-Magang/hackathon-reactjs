@@ -183,68 +183,14 @@
       }
     }
   ],
-  "keranjangs": [
-    {
-      "jumlah": 1,
-      "total_harga": 10000,
-      "product": {
-        "id": 6,
-        "kode": "K-06",
-        "nama": "My Hero Academia",
-        "harga": 10000,
-        "is_ready": true,
-        "gambar": "midoriya.jpg",
-        "category": {
-          "id": 1,
-          "nama": "Manga Anime"
-        }
-      },
-      "keterangan": "Bakso Kosongan",
-      "id": 1
-    },
-    {
-      "jumlah": 1,
-      "total_harga": 13000,
-      "product": {
-        "id": 5,
-        "kode": "K-05",
-        "nama": "Dr. STONE",
-        "harga": 13000,
-        "is_ready": true,
-        "gambar": "dr.Stone.jpg",
-        "category": {
-          "id": 1,
-          "nama": "Manga Anime"
-        }
-      },
-      "id": 2
-    }
-  ],
+  "keranjangs": [],
   "pesanans": [
     {
-      "total_bayar": 60000,
+      "total_bayar": 30000,
       "menus": [
         {
-          "jumlah": 2,
-          "total_harga": 32000,
-          "product": {
-            "id": 1,
-            "kode": "K-01",
-            "nama": "Boruto: Two Blue Vortex",
-            "harga": 16000,
-            "is_ready": true,
-            "gambar": "boruto.jpg",
-            "category": {
-              "id": 1,
-              "nama": "Manga Anime"
-            }
-          },
-          "keterangan": "Semuanya Pedas",
-          "id": 1
-        },
-        {
-          "jumlah": 2,
-          "total_harga": 28000,
+          "jumlah": 1,
+          "total_harga": 14000,
           "product": {
             "id": 2,
             "kode": "K-02",
@@ -257,7 +203,24 @@
               "nama": "Manga Anime"
             }
           },
-          "id": 3
+          "id": 1
+        },
+        {
+          "jumlah": 1,
+          "total_harga": 16000,
+          "product": {
+            "id": 1,
+            "kode": "K-01",
+            "nama": "Boruto: Two Blue Vortex",
+            "harga": 16000,
+            "is_ready": true,
+            "gambar": "boruto.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Manga Anime"
+            }
+          },
+          "id": 2
         }
       ],
       "id": 1
