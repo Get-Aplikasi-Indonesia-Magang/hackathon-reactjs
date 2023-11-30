@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "firebase": "^10.7.0",
+    "source-map-loader": "^4.0.1"
+  },
+  "devDependencies": {
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.2.1"
+  }
+}
