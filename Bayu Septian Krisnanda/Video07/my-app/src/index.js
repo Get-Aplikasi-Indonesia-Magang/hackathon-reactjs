@@ -1,16 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import HaloooComponent from './component/HaloooComponent';
-import StateFullComponentl from './container/StateFullComponent';
-import YuTubComp from './component/YuTubComp/YuTubComp';
+import LifeCycleComp from './container/LifeCycleComp/LifeCycleComp';
 import YuTubHome from './container/YuTubHome/YuTubHome';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<YuTubHome/>
-);
+root.render(<YuTubHome/>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

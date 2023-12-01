@@ -2,12 +2,26 @@ import React, {Component} from "react";
 import YuTubComp from "../../component/YuTubComp/YuTubComp";
 import Product from "../Product/Product";
 import assets from "../../assets";
+import LifeCycleComp from "../LifeCycleComp/LifeCycleComp";
+import BlogPost from "../BlogPost/BlogPost";
 
 class YuTubHome extends Component{
+    state = {
+        showComponent: true 
+    }
+
+    componentDidMount(){
+        // setTimeout(()=> {
+        //     this.setState({
+        //     showComponent: false
+        // })
+        // }, 15000)
+    }
+
     render(){
         return  (
                 <div>
-                    <p>Yutub Component</p>
+                    {/* <p>Yutub Component</p>
                     <hr/>
                     <YuTubComp 
                         time="13.15" 
@@ -25,10 +39,21 @@ class YuTubHome extends Component{
                         time="04.43" 
                         title="Title 4"
                         desc="desc 4"/>
-                    <YuTubComp/>
-                    <p>Counter</p>
+                    <YuTubComp/> */}
+                    {/* <p>Counter</p>
                     <hr/>
-                    <Product/>
+                    <Product/> */}
+                    {/* <p>LifeCycle Component</p>
+                    <hr/>
+                    {
+                        this.state.showComponent
+                        ?
+                        <LifeCycleComp/>
+                        : null
+                    } */}
+                    <p> BlogPost</p>
+                    <hr/>
+                    <BlogPost/>
                 </div> 
                 )
     }
