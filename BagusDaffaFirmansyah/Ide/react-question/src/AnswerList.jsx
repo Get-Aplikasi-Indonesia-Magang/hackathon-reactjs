@@ -1,4 +1,3 @@
-// src/AnswerList.js
 import React from 'react';
 
 const AnswerList = ({ answers }) => {

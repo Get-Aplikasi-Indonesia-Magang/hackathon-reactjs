@@ -13,15 +13,12 @@ const AddQuestion = ({ onAddQuestion }) => {
   const handleAddQuestion = async () => {
     try {
       if (newQuestion.trim() !== '') {
-        // Tambahkan pertanyaan ke koleksi 'questions' di Firestore
         const docRef = await addDoc(collection(db, 'questions'), {
           text: newQuestion,
         });
 
-        // Panggil fungsi yang diberikan oleh prop untuk memberitahu komponen induk bahwa pertanyaan telah ditambahkan
         onAddQuestion(newQuestion);
 
-        // Bersihkan input setelah pertanyaan ditambahkan
         setNewQuestion('');
 
         console.log('Pertanyaan berhasil ditambahkan dengan ID dokumen:', docRef.id);
@@ -31,13 +28,7 @@ const AddQuestion = ({ onAddQuestion }) => {
     }
   };
 
-  return (
-    <div>
-      {/* <h2>Tambah Pertanyaan Baru</h2>
-      <input type="text" value={newQuestion} onChange={handleInputChange} />
-      <button onClick={handleAddQuestion}>Tambah Pertanyaan</button> */}
-    </div>
-  );
+  return <div></div>;
 };
 
 export default AddQuestion;

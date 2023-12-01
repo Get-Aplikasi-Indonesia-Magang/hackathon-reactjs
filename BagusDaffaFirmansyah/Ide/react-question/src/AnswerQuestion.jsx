@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { addDoc, collection } from 'firebase/firestore'; // Import fungsi-fungsi Firestore yang diperlukan
-import { db } from './firebase'; // Sesuaikan path sesuai dengan struktur proyek Anda
+import { addDoc, collection } from 'firebase/firestore';
+import { db } from './firebase';
 
 const AnswerQuestion = ({ questionId }) => {
   const [answer, setAnswer] = useState('');
@@ -12,15 +12,12 @@ const AnswerQuestion = ({ questionId }) => {
   const handleSave = async () => {
     try {
       if (answer.trim() !== '') {
-        // Tambahkan jawaban ke koleksi 'answers' di Firestore
         const docRef = await addDoc(collection(db, 'answers'), {
           questionId,
           text: answer,
         });
 
         console.log('Jawaban berhasil disimpan dengan ID dokumen:', docRef.id);
-
-        // Tentukan logika atau tindakan tambahan setelah jawaban berhasil disimpan
       }
     } catch (error) {
       console.error('Terjadi kesalahan saat menyimpan jawaban:', error);

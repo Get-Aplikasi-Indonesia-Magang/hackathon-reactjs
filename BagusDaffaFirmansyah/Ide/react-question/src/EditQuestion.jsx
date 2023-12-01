@@ -1,4 +1,3 @@
-// src/EditQuestion.js
 import React, { useState } from 'react';
 
 const EditQuestion = ({ question, onSave, onCancel, onAnswer }) => {

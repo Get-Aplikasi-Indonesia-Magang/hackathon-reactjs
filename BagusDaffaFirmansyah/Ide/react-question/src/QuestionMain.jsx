@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState } from 'react';
 import QuestionList from './QuestionList';
 import AddQuestion from './AddQuestion';

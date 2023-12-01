@@ -1,4 +1,3 @@
-// src/QuestionList.js
 import React, { useState } from 'react';
 import EditQuestion from './EditQuestion';
 import AnswerList from './AnswerList';
